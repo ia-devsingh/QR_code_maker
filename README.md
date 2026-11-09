@@ -18,7 +18,7 @@ pip install qrcode[pil]
 ## Usage
 
 ```bash
-python qr_maker.py
+python QR_code_maker
 ```
 
 Then enter any text or website URL when prompted. The script will create a file named:
