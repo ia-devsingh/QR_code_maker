@@ -1,0 +1,13 @@
+import qrcode
+
+# Ask the user what they want to put in the QR code
+text = input("Enter text or a website URL: ").strip()
+
+if not text:
+    print("Please enter some text or a URL.")
+else:
+    # Create and save the QR code image
+    qr_image = qrcode.make(text)
+    qr_image.save("my_qr_code.png")
+
+    print("QR code created successfully: my_qr_code.png")
